@@ -1,18 +1,38 @@
-# object-oriented-programming
-Here is the translated syllabus for the "Object-Oriented Programming":
+# Object-Oriented Programming (C++)
 
-### Topic 1: Introduction to OOP. Structures. Creating Instances. Passing/Returning Instances to/from Functions. Alignment. Padding. Unions.
-### Topic 2: Enumerations (plain enum and enum class). Namespaces. Streams. Text Files. Reading and Writing to/from Text Files. Modes of Operation. Put and Get Pointers. Example of Working with CSV Files.
-### Topic 3: Binary Files. Reading and Writing to/from Binary Files. Implementation of a Simple Hex Viewer.
-### Topic 4: Member Functions (Methods). Constructors and Destructor. Order of Operation of Constructors and Destructors. Constructors and Destructor in Object Composition. Encapsulation. Accessors and Mutators (Getters and Setters).
-### Topic 5: Compilation Process. Separate Compilation – .h Files and .cpp Files.
-### Topic 6: Dynamic Memory in Structures/Classes. The Big Four (Big 4). Keyword `static`.
-### Topic 7: Exceptions.
-### Topic 8: Operator Overloading. Friend Classes and Functions.
-### Topic 9: Value Categories – glvalue, prvalue, xvalue, lvalue, rvalue. Move Semantics.
-### Topic 10: Inheritance (Is-a Relationship).
-### Topic 11: Static and Dynamic Binding. Virtual Functions. Keywords – `override` and `final`. Polymorphism. Pure Virtual Functions and Abstract Classes.
-### Topic 12: Collections of Objects in a Polymorphic Hierarchy. Factory Method.
-### Topic 13: Multiple Inheritance. Diamond Problem.
-### Topic 14: Parametric Polymorphism (Templates).
-### Topic 15: Tree Structure of Objects in a Polymorphic Hierarchy. Chess. Type Casting.
+Notes, examples and small projects from the *Object-Oriented Programming* course, written in C++.
+
+> **Credit:** the seminar materials in this repository are based on
+> [MariaGrozdeva/Object-oriented_programming_FMI](https://github.com/MariaGrozdeva/Object-oriented_programming_FMI).
+
+Follows on from [introduction-to-programming](https://github.com/alifrommars/introduction-to-programming).
+
+## Topics
+
+| # | Topic |
+|---|---|
+| [01](Sem_01) | Intro to OOP. Structures. Creating instances. Passing/returning instances. Alignment, padding, unions. |
+| [02](Sem_02) | Enums (`enum` and `enum class`). Namespaces. Streams. Text files. Put/get pointers. Working with CSV files. |
+| [03](Sem_03) | Binary files. Reading and writing binary files. A simple hex viewer. |
+| [04](Sem_04) | Methods. Constructors and destructors and their order. Composition. Encapsulation. Getters and setters. |
+| [05](Sem_05) | The compilation process. Separate compilation – `.h` and `.cpp` files. |
+| [06](Sem_06) | Dynamic memory in classes. The Big Four. The `static` keyword. |
+| [07](Sem_07) | Exceptions. |
+| [08](Sem_08) | Operator overloading. Friend classes and functions. |
+| [09](Sem_09) | Value categories – glvalue, prvalue, xvalue, lvalue, rvalue. Move semantics. |
+| [10](Sem_10) | Inheritance (is-a relationship). |
+| [11](Sem_11) | Static and dynamic binding. Virtual functions. `override` and `final`. Polymorphism. Abstract classes. |
+| [12](Sem_12) | Collections of objects in a polymorphic hierarchy. Factory method. |
+| [13](Sem_13) | Multiple inheritance. The diamond problem. |
+| [14](Sem_14) | Parametric polymorphism (templates). |
+| [15](Sem_15) | Trees of objects in a polymorphic hierarchy. Chess. Set calculator. Type casting. |
+
+## Running the code
+
+Most examples are a `Source.cpp` plus matching `.h`/`.cpp` files. Compile all of them together:
+
+```bash
+cd "Sem_06/Big4 examples/Person"
+g++ *.cpp -o person
+./person
+```
